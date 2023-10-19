@@ -1,16 +1,17 @@
-# This is a sample Python script.
+from accounts.usercreator import Creator
+from webdriver.driver import Driver
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+driver = Driver().get_driver()
+generator = Creator(driver)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+email, password = generator.register()
+print(email, password)
+article = generator.get_article("https://www.standaard.be/cnt/dmf20231019_97764318", email, password)
+print(article)
+# delete file if already exists
+if os.path.exists("article.html"):
+    os.remove("article.html")
+file = open("article.html", "w", encoding="utf-8")
+file.write('<link rel="stylesheet" href="https://www.standaard.be/v2/article-detail/cdn/fragment-article-detail.0.0.792.ds.styles.css">')
+file.write(article)

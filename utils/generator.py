@@ -16,6 +16,9 @@ class Generator:
     def generate_username(self):
         return self.faker.user_name()
 
+    def generate_email(self):
+        return self.faker.email()
+
 
 generator = Generator()
 
