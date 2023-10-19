@@ -96,7 +96,9 @@ class Creator:
         self.driver.find_element(By.NAME, "password").send_keys(password + "\n")
         self.wait_and_click(By.XPATH, "//span[contains(text(), 'Ga verder')]")
         # self.wait_and_click(By.XPATH, "//span[contains(text(), 'Ja, akkoord')]")
-        self.wait_and_click(By.XPATH, "//b[contains(text(), 'Dit artikel is exclusief voor abonnees, maar we bieden het je gratis aan.')]")
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//b[contains(text(), 'Dit artikel is exclusief voor abonnees, maar we bieden het je gratis aan.')]"))
+        )
         return self.driver.find_element(By.XPATH, '//*[@data-fragment-name="articleDetail"]').get_attribute("outerHTML")
         # print(self.driver.page_source)
         # return self.driver.page_source
