@@ -36,5 +36,4 @@ def read_item(article_id: str):
     full_article += """
     </body>
     </html>"""
-    # return full article as html
     return HTMLResponse(content=full_article, status_code=200)
