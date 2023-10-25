@@ -5,12 +5,13 @@ from fastapi.responses import HTMLResponse
 import os
 from utils.html_creator import encapsulate_html
 
-
 app = FastAPI()
+
 
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
+
 
 @app.get("/cnt/{article_id}")
 def read_item(article_id: str):

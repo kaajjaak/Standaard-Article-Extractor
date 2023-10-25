@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 class Driver:
     def __init__(self):
-         # delete all cache and cookies
+        # delete all cache and cookies
         options = webdriver.ChromeOptions()
         options.add_argument("--incognito")
         options.add_argument("--start-maximized")
