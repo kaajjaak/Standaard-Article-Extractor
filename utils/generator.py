@@ -18,8 +18,3 @@ class Generator:
 
     def generate_email(self):
         return self.faker.email()
-
-
-generator = Generator()
-
-print(generator.generate_username())
