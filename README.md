@@ -58,7 +58,7 @@ Replace `{article_id}` with the ID of the article you wish to retrieve.
 
 If you have suggestions for improving this tool, please open an issue or submit a pull request. All contributions are welcome!
 
-## Disclaimer
+## Disclaimer:
 
 This tool is designed for educational and research purposes only. It is not intended to be used for any illegal activities. Bypassing paywalls or unauthorized access to copyrighted content is against the terms of service for many websites and may violate copyright laws in many jurisdictions.
 
@@ -69,6 +69,6 @@ The author of this tool does not endorse or promote any illegal activities relat
 By using this tool, you acknowledge the above and agree that the author is not liable for any misuse or potential legal issues you may encounter. Use at your own risk and always act responsibly.
 
 
-## License
+## License:
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
