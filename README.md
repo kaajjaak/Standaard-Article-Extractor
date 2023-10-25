@@ -10,7 +10,7 @@ This tool is designed to extract pay-walled articles from the `standaard.be` web
   
 - Python Dependencies: Install the necessary Python packages using the provided `requirements.txt` file.
 
-`pip install -r requirements.txt`
+- `pip install -r requirements.txt`
 
 
 ### Project Structure:
@@ -27,7 +27,7 @@ Provides an API interface to retrieve articles. When running, articles can be fe
 
 Navigate to the project directory and run:
 
-`python main.py <URL_OF_THE_ARTICLE> [--pipe]`
+- `python main.py <URL_OF_THE_ARTICLE> [--pipe]`
 
 Arguments:
 
@@ -39,11 +39,11 @@ Arguments:
 
 Start the FastAPI server using:
 
-`uvicorn main_api:app --reload`
+- `uvicorn main_api:app --reload`
 
 Once the server is running, you can access articles by navigating to:
 
-`http://localhost:8000/cnt/{article_id}`
+- `http://localhost:8000/cnt/{article_id}`
 
 
 Replace `{article_id}` with the ID of the article you wish to retrieve.
