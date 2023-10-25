@@ -58,6 +58,17 @@ Replace `{article_id}` with the ID of the article you wish to retrieve.
 
 If you have suggestions for improving this tool, please open an issue or submit a pull request. All contributions are welcome!
 
+## Disclaimer
+
+This tool is designed for educational and research purposes only. It is not intended to be used for any illegal activities. Bypassing paywalls or unauthorized access to copyrighted content is against the terms of service for many websites and may violate copyright laws in many jurisdictions.
+
+**Before using this tool, please ensure that you have a legitimate subscription or access rights to the content you intend to retrieve.**
+
+The author of this tool does not endorse or promote any illegal activities related to accessing content without proper authorization. The user is solely responsible for ensuring their usage of this tool complies with all local, state, federal, and international laws.
+
+By using this tool, you acknowledge the above and agree that the author is not liable for any misuse or potential legal issues you may encounter. Use at your own risk and always act responsibly.
+
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
